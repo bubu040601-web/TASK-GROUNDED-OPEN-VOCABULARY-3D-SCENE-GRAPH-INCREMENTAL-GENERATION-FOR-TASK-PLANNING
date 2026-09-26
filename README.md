@@ -1,0 +1,11 @@
+# Task-Grounded Open-Vocabulary 3D Scene Graph Incremental Generation for Task Planning
+
+## Demonstration Video
+
+[Download or view the demonstration video](./demo.mp4)
+
+## Abstract
+
+For a robot operating in an indoor 3D scene, a planning task is inherently local: it is defined over a small subset of entities, relations, and states that the goal depends on, rather than over the scene as a whole. Robotic task planning therefore demands task-grounded, on-demand scene understanding—yet existing 3D scene graph pipelines do the opposite, consuming all frames and exhaustively enumerating objects and relations before any task is known, on a closed scene graph with predefined categories and structure. This global, task-agnostic construction is mismatched to planning: in the 2D-to-3D reconstruction process, more frames accumulate larger back-projection and registration errors, which instead amplify object recognition bias; pose drift corrupts the association of small interaction elements; and computation is wasted on task-irrelevant regions. We propose Task-Grounded 3D Open Scene Graph Incremental Generation (TG-OSG), which reframes the scene graph into an open representation generated on demand. TG-OSG (1) builds a coarse open scene graph from a few dominant-viewpoint frames, (2) incrementally refines it by acquiring additional frames only for task-relevant regions and discovering novel entities and relations, and (3) terminates once the task is determined to be executable—yielding an execution sequence—or infeasible. We evaluate on three public 3D scene graph datasets together with a self-built simulation for task-grounded scene graph generation, and demonstrate significant improvements and advantages over existing closed and open SGG methods on both open scene graph generation and the corresponding task planning.
+
+# TASK-GROUNDED-OPEN-VOCABULARY-3D-SCENE-GRAPH-INCREMENTAL-GENERATION-FOR-TASK-PLANNING
